@@ -3,7 +3,6 @@ import { useRouter } from "next/dist/client/router";
 function ProjectItemSmallScreen({
   id,
   name,
-  descriptionList,
   technologiesUsed,
   demoLink,
   bgImg,

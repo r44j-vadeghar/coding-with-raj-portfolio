@@ -11,11 +11,7 @@ function ProjectsSection({ projects }) {
     <div>
       {width > 768 ? (
         <div id="projects">
-          <Carousel
-            autoPlay
-            infiniteLoop
-            interval={5000}
-          >
+          <Carousel autoPlay infiniteLoop interval={5000}>
             {projects.map((project) => (
               <div>
                 <ProjectItem
@@ -39,7 +35,6 @@ function ProjectsSection({ projects }) {
             <ProjectItemSmallScreen
               id={project.id}
               name={project.projectName}
-              descriptionList={project.descriptionList}
               technologiesUsed={project.technologiesUsed}
               demoLink={project.demoLink}
               bgImg={project.bgImg}

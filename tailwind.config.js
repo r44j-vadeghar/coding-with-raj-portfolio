@@ -17,6 +17,9 @@ module.exports = {
         "chat-app": "url('/chat-app-2.jpg')",
         "google-app": "url('/google-app.jpg')",
         "todo-app": "url('/todo-app.jpg')",
+        "covid-app": "url('/covid-app.jpg')",
+        "netflix-app": "url('/netflix-app.jpg')",
+        "instagram-app": "url('/instagram-app.jpg')",
       }),
       colors: {
         cyan: colors.cyan,
