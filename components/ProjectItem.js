@@ -14,10 +14,7 @@ function ProjectItem({
       <div
         className={`${bgImg} clipScreenImage opacity-40 lg:opacity-90 backdrop-blur-md overflow-hidden z-10`}
       />
-      <div
-        id="projects"
-        className="flex items-center 3xl:max-w-screen-2xl max-w-screen-xl mx-auto z-50 h-screen overflow-hidden"
-      >
+      <div className="flex items-center 3xl:max-w-screen-2xl max-w-screen-xl mx-auto z-50 h-screen overflow-hidden">
         <div className="flex flex-col justify-start items-start space-y-9 sm:space-y-14 z-50 mx-5 lg:mx-0 w-screen">
           <div className="flex flex-col items-start space-y-7">
             <h1 className="text-2xl sm:text-6xl font-semibold break-words text-left">

@@ -19,10 +19,10 @@ function HomeSection() {
     >
       <div className="w-screen lg:w-3/5 flex flex-col space-y-12 md:space-y-20 justify-center h-screen animate-fade-up z-10">
         <div className="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-11 sm:items-center">
-          <p className="text-cyan-600 transition-transform lg:hover:scale-125">
+          <p className="text-coolGray-900 lg:text-cyan-600 transition-transform lg:hover:scale-125">
             Raj Vadeghar
           </p>
-          <p className="text-cyan-600 transition-transform lg:hover:scale-125">
+          <p className="text-coolGray-900 lg:text-cyan-600 transition-transform lg:hover:scale-125">
             Available for Freelance project / full time job
           </p>
         </div>
@@ -32,10 +32,10 @@ function HomeSection() {
             Hi, I am <span className="whitespace-nowrap">a Web Developer.</span>
           </h3>
 
-          <h3 className="text-xl md:text-3xl leading-relaxed">
+          <h3 className="text-lg md:text-3xl leading-relaxed">
             Let us turn our ideas into real solutions using Digital assets.
             Which helps your business{" "}
-            <span className="text-4xl md:text-6xl font-bold text-coolGray-900 lg:text-rose-600">
+            <span className="text-3xl md:text-6xl font-bold text-rose-600">
               <Typewriter
                 words={["build", "grow"]}
                 loop={0}

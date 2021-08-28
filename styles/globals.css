@@ -42,11 +42,15 @@
     clip-path: polygon(68% 0, 100% 0%, 100% 100%, 55% 100%);
   }
   .clipScreen-sm {
-    clip-path: circle(80% at 50% 100%);
+    clip-path: circle(60% at 50% 0%);
   }
   .clipProject-lg {
     /* clip-path: polygon(55% 0, 100% 0%, 100% 100%, 55% 50%); */
     clip-path: ellipse(45% 100% at 100% 0%);
+  }
+  .clipProject {
+    /* clip-path: polygon(55% 0, 100% 0%, 100% 100%, 55% 50%); */
+    clip-path: ellipse(80% 80% at 0% 100%);
   }
   .clipProject-sm {
     /* clip-path: polygon(55% 0, 100% 0%, 100% 100%, 55% 50%); */
