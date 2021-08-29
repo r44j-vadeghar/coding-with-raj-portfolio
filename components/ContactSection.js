@@ -25,10 +25,12 @@ function ContactSection() {
       <div
         className={`bg-contact-img clipScreenImage opacity-40 lg:opacity-90 backdrop-blur-md overflow-hidden z-10`}
       />
-      <div className="flex items-center 3xl:max-w-screen-2xl max-w-screen-xl mx-auto z-50 h-screen overflow-hidden">
+      <div className="flex items-center 3xl:max-w-screen-2xl max-w-screen-xl mx-auto z-50 h-auto md:h-screen overflow-hidden">
         <div className="flex flex-col justify-start space-y-7 z-40">
           <div className="flex items-end space-x-5">
-            <p className="text-2xl md:hidden font-semibold px-5">Contact Me</p>
+            <p className="text-2xl md:hidden font-semibold px-5 mt-16 md:mt-0">
+              Contact Me
+            </p>
             <div className="hidden md:block w-36 h-20">
               <MailIcon className="h-28 -ml-4 text-white/60" />
             </div>
@@ -37,7 +39,7 @@ function ContactSection() {
             </p>
           </div>
           <form className="flex flex-col space-y-7">
-            <div className="flex flex-col md:flex-row items-start md:items-center space-y-2 space-x-5">
+            <div className="flex flex-col md:flex-row items-start md:items-center space-y-1 space-x-5">
               <p className="w-36 pl-5 text-lg">Name:</p>
               <div className="p-2 bg-gray-900 flex-grow rounded-md">
                 <input
@@ -48,7 +50,7 @@ function ContactSection() {
                 />
               </div>
             </div>
-            <div className="flex flex-col md:flex-row items-start md:items-center space-y-2 space-x-5">
+            <div className="flex flex-col md:flex-row items-start md:items-center space-y-1 space-x-5">
               <p className="w-36 pl-5 text-lg ">Email:</p>
               <div className="p-2 bg-gray-900 flex-grow rounded-md">
                 <input
@@ -59,7 +61,7 @@ function ContactSection() {
                 />
               </div>
             </div>
-            <div className="flex flex-col md:flex-row items-start md:items-center space-y-2 space-x-5">
+            <div className="flex flex-col md:flex-row items-start md:items-center space-y-1 space-x-5">
               <p className="w-36 pl-5 text-lg ">Subject:</p>
               <div className="p-2 bg-gray-900 flex-grow rounded-md">
                 <input
@@ -70,7 +72,7 @@ function ContactSection() {
                 />
               </div>
             </div>
-            <div className="flex flex-col md:flex-row items-start space-y-2 space-x-5">
+            <div className="flex flex-col md:flex-row items-start space-y-1 space-x-5">
               <p className="w-36 pl-5 text-lg">Message:</p>
               <div className="p-2 bg-gray-900 flex-grow rounded-md">
                 <textarea
