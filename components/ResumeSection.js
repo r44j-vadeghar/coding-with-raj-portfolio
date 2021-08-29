@@ -35,7 +35,7 @@ function ResumeSection() {
             Education
           </h1>
           {COLLEGES.map((college) => (
-            <div className="flex flex-col items-center space-y-3 md:flex-row md:space-y-0 md:space-x-5 z-40 border md:border-0 hover:shadow-lg border-opacity-60 p-5">
+            <div className="flex flex-col items-center space-y-3 md:flex-row md:space-y-0 md:space-x-5 z-40 border md:border-0 hover:shadow-lg md:hover:shadow-none border-opacity-60 p-5">
               <div className="h-36 w-36 z-40">
                 <img className="rounded-full" src={college.img} alt="" />
               </div>
