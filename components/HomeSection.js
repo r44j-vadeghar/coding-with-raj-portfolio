@@ -52,7 +52,7 @@ function HomeSection() {
           <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-3">
             <div
               tabIndex="0"
-              className="relative flex space-x-1 items-center w-max bg-blue-600 text-white px-6 py-3 rounded-md focus:outline-none focus:ring focus:ring-cyan-500 active:ring-4 active:ring-cyan-500 active:ring-offset-2 active:ring-offset-indigo-700 hover:ring-2 hover:bg-blue-500 cursor-pointer"
+              className="relative flex space-x-1 items-center w-max bg-blue-600 text-white px-6 py-3 rounded-md transition-all focus:outline-none focus:ring focus:ring-cyan-500 active:ring-4 active:ring-cyan-500 active:ring-offset-2 active:ring-offset-indigo-700 hover:ring-2 hover:bg-blue-500 cursor-pointer"
             >
               <ClipboardCopyIcon className="h-6" />
               <button className="outline-none">vadegharraj@gmail.com</button>

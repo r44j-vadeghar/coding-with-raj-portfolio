@@ -46,7 +46,7 @@ function ProjectItem({
             href={demoLink}
             target="_blank"
             tabIndex="0"
-            className="w-max bg-blue-600 text-white px-4 sm:px-6 py-1 sm:py-2 mt-5 rounded-md focus:outline-none focus:ring focus:ring-cyan-500 active:ring-4 active:ring-cyan-500 active:ring-offset-2 active:ring-offset-indigo-700 hover:ring-2 hover:bg-blue-500 cursor-pointer"
+            className="w-max bg-blue-600 text-white px-4 sm:px-6 py-1 sm:py-2 mt-5 rounded-md transition-all focus:outline-none focus:ring focus:ring-cyan-500 active:ring-4 active:ring-cyan-500 active:ring-offset-2 active:ring-offset-indigo-700 hover:ring-2 hover:bg-blue-500 cursor-pointer"
           >
             Live Demo
           </a>

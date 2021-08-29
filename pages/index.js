@@ -1,7 +1,11 @@
 import Head from "next/head";
+import AboutSection from "../components/AboutSection";
+import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HomeSection from "../components/HomeSection";
 import ProjectsSection from "../components/ProjectsSection";
+import ResumeSection from "../components/ResumeSection";
 
 export default function Home({ projects }) {
   return (
@@ -13,10 +17,11 @@ export default function Home({ projects }) {
 
       <Header />
       <HomeSection />
-      <hr className="opacity-20" />
       <ProjectsSection projects={projects} />
-      <hr className="opacity-20" />
-
+      <AboutSection />
+      <ResumeSection />
+      <ContactSection />
+      <Footer />
       {/* <footer className="flex items-center justify-center w-full h-24 border-t"></footer> */}
     </div>
   );
