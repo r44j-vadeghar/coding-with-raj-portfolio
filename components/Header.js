@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import SocialItems from "./SocialItems";
 
 function Header() {
   const [navVisible, setNavVisible] = useState(false);
@@ -27,55 +28,10 @@ function Header() {
       <div
         className={`${
           !navVisible && "relative"
-        } h-12 flex sm:items-center sm:justify-between 3xl:max-w-screen-2xl max-w-screen-xl mx-auto`}
+        } h-12 flex sm:items-center sm:justify-between sectionSize`}
       >
         <div className="flex items-center justify-between mx-5 sm:mx-0 w-full">
-          <div className="flex items-center space-x-3 h-10">
-            <div className="rounded-full hover:scale-125 transition-all cursor-pointer">
-              <a
-                href="https://www.linkedin.com/in/rajvadeghar2000/"
-                target="_blank"
-              >
-                <img
-                  loading="lazy"
-                  className="headerImage"
-                  src="/linkedin-round.svg"
-                />
-              </a>
-            </div>
-            <div className="rounded-full hover:scale-125 transition-all cursor-pointer">
-              <a href="https://github.com/RajVadeghar" target="_blank">
-                <img loading="lazy" className="headerImage" src="/github.svg" />
-              </a>
-            </div>
-            <div className="rounded-full hover:scale-125 transition-all cursor-pointer">
-              <a href="#" target="_blank">
-                <img
-                  loading="lazy"
-                  className="headerImage"
-                  src="/instagram-round.svg"
-                />
-              </a>
-            </div>
-            <div className="rounded-full hover:scale-125 transition-all cursor-pointer">
-              <a href="https://twitter.com/VadegharRaj" target="_blank">
-                <img
-                  loading="lazy"
-                  className="headerImage"
-                  src="/twitter-round.svg"
-                />
-              </a>
-            </div>
-            <div className="rounded-full hover:scale-125 transition-all cursor-pointer">
-              <a href="https://www.facebook.com/raj.vadeghar.3" target="_blank">
-                <img
-                  loading="lazy"
-                  className="headerImage"
-                  src="/facebook-round.svg"
-                />
-              </a>
-            </div>
-          </div>
+          <SocialItems />
           <div
             onClick={() => setNavVisible((navVisible) => !navVisible)}
             className={`${

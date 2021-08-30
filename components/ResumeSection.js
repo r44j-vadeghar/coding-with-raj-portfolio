@@ -1,40 +1,14 @@
 import { ChevronRightIcon } from "@heroicons/react/outline";
 
-const COLLEGES = [
-  {
-    name: "Kakatiya University college of Engineering and Technologies",
-    course: "Bachelors of Technology in Computer Science",
-    period: "July 2020 - Present",
-    desc: "Currently pursuing, completion of course will be on 2023",
-    reviews: {
-      0: "No hostel for first year joing students",
-      1: "No placements provided",
-    },
-    img: "ku-clg.png",
-  },
-  {
-    name: "Government Institute Of Electronics",
-    course: "Diploma in Computer Science",
-    period: "July 2016 - November 2019",
-    desc: "Passed with distinction. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-    reviews: {
-      0: "Good college with ugly hostel",
-    },
-    img: "gioe-clg.jpg",
-  },
-];
-
-function ResumeSection() {
+function ResumeSection({ colleges }) {
   return (
-    <div id="resume" className="relative h-auto md:h-screen overflow-hidden">
+    <div id="resume" className="relative md:h-screen overflow-hidden">
       <div className="hidden md:block clipScreenImageGradient overflow-hidden" />
       <div className="hidden md:block bg-education-img clipScreenImage lg:opacity-90 backdrop-blur-md overflow-hidden z-10" />
-      <div className="flex items-center py-5 3xl:max-w-screen-2xl max-w-screen-xl mx-5 sm:mx-auto h-full z-40">
+      <div className="flex items-center py-5 sectionSize mx-5 md:mx-auto h-full z-40">
         <div className="flex flex-col space-y-11 z-40">
-          <h1 className="text-2xl sm:text-6xl font-semibold break-words z-40">
-            Education
-          </h1>
-          {COLLEGES.map((college) => (
+          <h1 className="sectionHeading">Education</h1>
+          {colleges.map((college) => (
             <div className="flex flex-col items-center space-y-3 md:flex-row md:space-y-0 md:space-x-5 z-40 border md:border-0 hover:shadow-lg md:hover:shadow-none border-opacity-60 p-5">
               <div className="h-36 w-36 z-40">
                 <img className="rounded-full" src={college.img} alt="" />

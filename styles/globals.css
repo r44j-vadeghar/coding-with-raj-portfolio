@@ -38,6 +38,10 @@
       : -webkit-scrollbar-thumb: window-inactive;
   }
 
+  .sectionHeading {
+    @apply text-2xl sm:text-6xl font-semibold break-words;
+  }
+
   .clipScreen-lg {
     clip-path: polygon(68% 0, 100% 0%, 100% 100%, 55% 100%);
   }
@@ -74,5 +78,13 @@
 
   .headerItem {
     @apply text-sm font-semibold capitalize tracking-widest cursor-pointer transition-all hover:text-cyan-500;
+  }
+
+  .sectionSize {
+    @apply 3xl:max-w-screen-2xl max-w-screen-xl mx-auto;
+  }
+
+  .blueButton {
+    @apply relative flex space-x-1 items-center w-max bg-blue-600 text-white px-6 py-3 rounded-md transition-all focus:outline-none focus:ring focus:ring-cyan-500 active:ring-4 active:ring-cyan-500 active:ring-offset-2 active:ring-offset-indigo-700 hover:ring-2 hover:bg-blue-500 cursor-pointer;
   }
 }

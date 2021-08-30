@@ -25,8 +25,8 @@ function ContactSection() {
       <div
         className={`hidden md:block bg-contact-img clipScreenImage opacity-40 lg:opacity-90 backdrop-blur-md overflow-hidden z-10`}
       />
-      <div className="flex items-center 3xl:max-w-screen-2xl max-w-screen-xl mx-auto z-50 h-auto md:h-screen overflow-hidden">
-        <div className="flex flex-col justify-start space-y-7 z-40">
+      <div className="flex items-center sectionSize z-50 md:h-screen overflow-hidden">
+        <div className="flex flex-col justify-start space-y-7 z-40 w-full md:w-auto">
           <div className="flex items-end space-x-5">
             <p className="text-2xl md:hidden font-semibold px-5 mt-16 md:mt-0">
               Contact Me
@@ -40,7 +40,7 @@ function ContactSection() {
           </div>
           <form className="flex flex-col space-y-7">
             <div className="flex flex-col md:flex-row items-start md:items-center space-y-1 space-x-5">
-              <p className="w-36 pl-5 text-lg">Name:</p>
+              <p className="w-36 pl-5 text-lg">Your Name:</p>
               <div className="p-2 bg-gray-900 flex-grow rounded-md">
                 <input
                   value={name}
@@ -51,7 +51,7 @@ function ContactSection() {
               </div>
             </div>
             <div className="flex flex-col md:flex-row items-start md:items-center space-y-1 space-x-5">
-              <p className="w-36 pl-5 text-lg ">Email:</p>
+              <p className="w-36 pl-5 text-lg ">Your Email:</p>
               <div className="p-2 bg-gray-900 flex-grow rounded-md">
                 <input
                   value={email}
@@ -73,7 +73,7 @@ function ContactSection() {
               </div>
             </div>
             <div className="flex flex-col md:flex-row items-start space-y-1 space-x-5">
-              <p className="w-36 pl-5 text-lg">Message:</p>
+              <p className="w-36 pl-5 text-lg">Your Message:</p>
               <div className="p-2 bg-gray-900 flex-grow rounded-md">
                 <textarea
                   value={message}
@@ -89,7 +89,7 @@ function ContactSection() {
                 tabIndex="0"
                 type="submit"
                 onClick={sendMail}
-                className="relative flex space-x-1 items-center w-max bg-blue-600 text-white px-6 py-3 rounded-md transition-all focus:outline-none focus:ring focus:ring-cyan-500 active:ring-4 active:ring-cyan-500 active:ring-offset-2 active:ring-offset-indigo-700 hover:ring-2 hover:bg-blue-500 cursor-pointer"
+                className="blueButton"
               >
                 <button className="outline-none">Submit</button>
               </div>

@@ -2,6 +2,7 @@ import { XIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/dist/client/router";
 import { useEffect, useState } from "react";
 import ProjectItem from "../components/ProjectItem";
+import Head from "next/head";
 
 function Project({ projects }) {
   const router = useRouter();
@@ -24,6 +25,9 @@ function Project({ projects }) {
 
   return (
     <div className="relative bg-gradient-to-r from-blueGray-800 to-coolGray-900 text-white h-auto max-w-screen">
+      <Head>
+        <title>{project.projectName} | CodingWithRaj</title>
+      </Head>
       <div
         onClick={() => router.back()}
         className="absolute top-2 right-2 h-15 w-15 z-50 cursor-pointer"

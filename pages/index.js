@@ -7,7 +7,7 @@ import HomeSection from "../components/HomeSection";
 import ProjectsSection from "../components/ProjectsSection";
 import ResumeSection from "../components/ResumeSection";
 
-export default function Home({ projects }) {
+export default function Home({ projects, colleges, whatIDo }) {
   return (
     <div className="bg-gradient-to-r from-blueGray-800 to-coolGray-900 text-white h-auto max-w-screen">
       <div className="clipScreenTW overflow-hidden"></div>
@@ -18,11 +18,10 @@ export default function Home({ projects }) {
       <Header />
       <HomeSection />
       <ProjectsSection projects={projects} />
-      <AboutSection />
-      <ResumeSection />
+      <AboutSection whatIDo={whatIDo} />
+      <ResumeSection colleges={colleges} />
       <ContactSection />
       <Footer />
-      {/* <footer className="flex items-center justify-center w-full h-24 border-t"></footer> */}
     </div>
   );
 }
@@ -189,9 +188,47 @@ export async function getServerSideProps(context) {
     },
   ];
 
+  const colleges = [
+    {
+      name: "Kakatiya University college of Engineering and Technologies",
+      course: "Bachelors of Technology in Computer Science",
+      period: "July 2020 - Present",
+      desc: "Currently pursuing, completion of course will be on 2023",
+      reviews: {
+        0: "No hostel for first year joing students",
+        1: "No placements provided",
+      },
+      img: "ku-clg.png",
+    },
+    {
+      name: "Government Institute Of Electronics",
+      course: "Diploma in Computer Science",
+      period: "July 2016 - November 2019",
+      desc: "Passed with distinction. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+      reviews: {
+        0: "Good college with ugly hostel",
+      },
+      img: "gioe-clg.jpg",
+    },
+  ];
+
+  const whatIDo = [
+    {
+      work: "Develop highly interactive Front end / User Interfaces for your web and mobile applications",
+    },
+    {
+      work: "Progressive Web Applications ( PWA ) in normal and SPA Stacks",
+    },
+    {
+      work: "Integration of third party services such as Firebase/ AWS / Digital Ocean",
+    },
+  ];
+
   return {
     props: {
       projects,
+      colleges,
+      whatIDo,
     },
   };
 }
