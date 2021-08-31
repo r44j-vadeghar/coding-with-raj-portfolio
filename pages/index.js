@@ -195,7 +195,7 @@ export async function getServerSideProps(context) {
       period: "July 2020 - Present",
       desc: "Currently pursuing, completion of course will be on 2023",
       reviews: {
-        0: "No hostel for first year joing students",
+        0: "No hostel provided for newly admitted students",
         1: "No placements provided",
       },
       img: "ku-clg.png",
