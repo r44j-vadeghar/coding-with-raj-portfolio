@@ -14,6 +14,7 @@ function ProjectsSection({ projects }) {
           {projects.map((project) => (
             <div>
               <ProjectItem
+                key={project.id}
                 id={project.id}
                 name={project.projectName}
                 descriptionList={project.descriptionList}
@@ -28,6 +29,7 @@ function ProjectsSection({ projects }) {
         <div className="flex flex-col space-y-11 w-screen max-w-screen-xl z-50 h-auto overflow-hidden">
           {projects.map((project) => (
             <ProjectItemSmallScreen
+              key={project.id}
               id={project.id}
               name={project.projectName}
               technologiesUsed={project.technologiesUsed}

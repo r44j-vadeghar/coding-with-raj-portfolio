@@ -9,7 +9,10 @@ function ResumeSection({ colleges }) {
         <div className="flex flex-col space-y-11 z-40">
           <h1 className="sectionHeading">Education</h1>
           {colleges.map((college) => (
-            <div className="flex flex-col items-center space-y-3 md:flex-row md:space-y-0 md:space-x-5 z-40 border md:border-0 hover:shadow-lg md:hover:shadow-none border-opacity-60 p-5">
+            <div
+              key={college.id}
+              className="flex flex-col items-center space-y-3 md:flex-row md:space-y-0 md:space-x-5 z-40 border md:border-0 hover:shadow-lg md:hover:shadow-none border-opacity-60 p-5"
+            >
               <div className="h-36 w-36 z-40">
                 <img className="rounded-full" src={college.img} alt="" />
               </div>
@@ -26,7 +29,7 @@ function ResumeSection({ colleges }) {
                 </p>
                 <ul className="flex flex-col space-y-1 pl-8">
                   {Object.keys(college.reviews).map((review, i) => (
-                    <div className="flex space-x-1 items-center">
+                    <div key={i} className="flex space-x-1 items-center">
                       <div className="h-4 w-4">
                         <ChevronRightIcon className="h-4 text-gray-500" />
                       </div>

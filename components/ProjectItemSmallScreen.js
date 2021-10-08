@@ -25,8 +25,11 @@ function ProjectItemSmallScreen({
       <div className="h-full flex flex-col justify-end items-start space-y-2 p-5">
         <h1 className="text-2xl font-semibold z-40">{name}</h1>
         <div className="flex items-center space-x-2">
-          {technologiesUsed.map((tech) => (
-            <div className="w-10 h-10 md:w-20 md:h-20 bg-white/40 backdrop-blur-md rounded-full p-2 flex justify-center items-center z-30">
+          {technologiesUsed.map((tech, i) => (
+            <div
+              key={i}
+              className="w-10 h-10 md:w-20 md:h-20 bg-white/40 backdrop-blur-md rounded-full p-2 flex justify-center items-center z-30"
+            >
               <img className="animate-spin-slow" src={tech.techImgSrc} alt="" />
             </div>
           ))}

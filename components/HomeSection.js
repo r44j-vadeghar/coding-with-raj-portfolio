@@ -12,6 +12,7 @@ function HomeSection() {
       setIsCopied(false);
     }, 1000);
   };
+
   return (
     <div id="home" className="flex sectionSize">
       <div className="lg:w-3/5 flex flex-col space-y-12 md:space-y-20 justify-center h-screen animate-fade-up z-10 mx-5 md:mx-0">

@@ -20,8 +20,11 @@ function AboutSection({ whatIDo }) {
           <div className="flex flex-col space-y-3">
             <p>FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK</p>
             <div className="flex space-x-3">
-              {SKILLS.map((tech) => (
-                <div className="w-10 h-10 md:w-20 md:h-20 bg-white/40 backdrop-blur-md rounded-full p-2 flex justify-center items-center">
+              {SKILLS.map((tech, i) => (
+                <div
+                  key={i}
+                  className="w-10 h-10 md:w-20 md:h-20 bg-white/40 backdrop-blur-md rounded-full p-2 flex justify-center items-center"
+                >
                   <img
                     className="animate-spin-slow"
                     src={tech.techImgSrc}
@@ -31,8 +34,8 @@ function AboutSection({ whatIDo }) {
               ))}
             </div>
             <ul className="flex flex-col space-y-2 text-sm text-white break-words z-40">
-              {whatIDo.map((work) => (
-                <div className="flex space-x-2">
+              {whatIDo.map((work, i) => (
+                <div key={i} className="flex space-x-2">
                   <div className="h-5 w-5">
                     <LightningBoltIcon className="h-5 text-yellow-500" />
                   </div>

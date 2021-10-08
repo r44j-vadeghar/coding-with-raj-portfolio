@@ -190,6 +190,7 @@ export async function getServerSideProps(context) {
 
   const colleges = [
     {
+      id: "0",
       name: "Kakatiya University college of Engineering and Technologies",
       course: "Bachelors of Technology in Computer Science",
       period: "July 2020 - Present",
@@ -201,6 +202,7 @@ export async function getServerSideProps(context) {
       img: "ku-clg.png",
     },
     {
+      id: "1",
       name: "Government Institute Of Electronics",
       course: "Diploma in Computer Science",
       period: "July 2016 - November 2019",
