@@ -13,7 +13,7 @@ function AboutSection({ whatIDo }) {
   return (
     <div id="about" className="relative">
       <div className="hidden md:block clipScreenImageGradient overflow-hidden" />
-      <div className="hidden md:block bg-me-img clipScreenImage lg:opacity-90 backdrop-blur-md overflow-hidden z-10" />
+      <div className="hidden md:block bg-me-img clipScreenImage lg:opacity-90 overflow-hidden z-10" />
       <div className="flex items-center py-5 sectionSize mx-5 md:mx-auto md:h-screen z-40 overflow-hidden my-10 md:my-0">
         <div className="flex flex-col items-start space-y-7 w-screen lg:w-3/5 z-40">
           <h1 className="sectionHeading">What I Do?</h1>

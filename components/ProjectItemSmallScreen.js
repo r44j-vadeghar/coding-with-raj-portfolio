@@ -14,8 +14,7 @@ function ProjectItemSmallScreen({
       id={id}
       className={`relative ${bgImg} w-auto mx-5 overflow-hidden h-56 bg-contain rounded-md group`}
     >
-      <div className="absolute inset-0 clipProject z-20 bg-transparent transition-all group-hover:bg-rose-600"></div>
-      <div className="absolute inset-0 bg-white/10 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-black/50 shadow-md" />
       <p
         onClick={() => router.push(`/${id}`)}
         className="absolute text-xs text-gray-200 italic top-2 right-2 z-40 cursor-pointer"

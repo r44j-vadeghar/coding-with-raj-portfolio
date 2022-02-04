@@ -69,7 +69,7 @@
     @apply absolute inset-0 bg-right bg-no-repeat bg-contain clipProject-sm lg:clipProject-lg;
   }
   .clipScreenImageGradient {
-    @apply absolute inset-0 bg-gradient-to-tr from-blueGray-800 to-transparent backdrop-blur-md lg:backdrop-blur-0 clipProject-sm lg:clipProject-lg z-40;
+    @apply absolute inset-0 bg-gradient-to-tr from-blueGray-900 to-blueGray-900/10 clipProject-sm lg:clipProject-lg z-40;
   }
 
   .headerImage {

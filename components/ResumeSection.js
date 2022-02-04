@@ -4,7 +4,7 @@ function ResumeSection({ colleges }) {
   return (
     <div id="resume" className="relative md:h-screen overflow-hidden">
       <div className="hidden md:block clipScreenImageGradient overflow-hidden" />
-      <div className="hidden md:block bg-education-img clipScreenImage lg:opacity-90 backdrop-blur-md overflow-hidden z-10" />
+      <div className="hidden md:block bg-education-img clipScreenImage lg:opacity-90 overflow-hidden z-10" />
       <div className="flex items-center py-5 sectionSize mx-5 md:mx-auto h-full z-40">
         <div className="flex flex-col space-y-11 z-40">
           <h1 className="sectionHeading">Education</h1>
