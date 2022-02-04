@@ -23,6 +23,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: (theme) => ({
+        "ku-app": "url('/ku.jpg')",
         "chat-app": "url('/chat-app-2.jpg')",
         "google-app": "url('/google-app.jpg')",
         "todo-app": "url('/todo-app.jpg')",

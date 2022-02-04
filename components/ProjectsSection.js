@@ -4,12 +4,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import useMediaQuery from "../utils/useMediaQuery";
 import ProjectItemSmallScreen from "./ProjectItemSmallScreen";
 import { useState } from "react";
-import Image from "next/image";
 
 function ProjectsSection({ projects }) {
   const [width] = useMediaQuery();
   const [index, setIndex] = useState(0);
-  console.log(projects);
 
   const handleArrow = (direction) => {
     if (direction === "l") {

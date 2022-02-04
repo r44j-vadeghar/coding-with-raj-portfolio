@@ -15,7 +15,7 @@ function ProjectItem({
     <div className="">
       <div className="clipScreenImageGradient overflow-hidden" />
       <div
-        className={`${bgImg} clipScreenImage opacity-40 lg:opacity-90 overflow-hidden z-10`}
+        className={`${bgImg} flex h-full w-full clipScreenImage opacity-40 lg:opacity-90 overflow-hidden z-10`}
       />
       <div className="flex items-center sectionSize z-40 h-screen">
         <div className="flex flex-col justify-start items-start space-y-9 sm:space-y-14 z-50 mx-5 lg:mx-0 w-screen">
