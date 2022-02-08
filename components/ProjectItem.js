@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { ChevronRightIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/dist/client/router";
 
@@ -10,6 +11,7 @@ function ProjectItem({
   bgImg,
 }) {
   const router = useRouter();
+  console.log(bgImg);
 
   return (
     <div className="">
