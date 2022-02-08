@@ -10,11 +10,11 @@ function Footer() {
   };
 
   return (
-    <div className="relative bg-blueGray-900 h-40 mt-11 md:mt-0">
+    <div className="relative bg-slate-900 h-40 mt-11 md:mt-0">
       <div className="absolute flex items-center justify-center left-0 right-0 -top-4 md:-top-5">
         <div
           onClick={scrollToTop}
-          className="z-50 grid place-content-center place-items-center p-5 md:p-6 h-8 w-8 bg-blueGray-700 rounded-full cursor-pointer transition-all hover:bg-yellow-500"
+          className="z-50 grid place-content-center place-items-center p-5 md:p-6 h-8 w-8 bg-slate-700 rounded-full cursor-pointer transition-all hover:bg-yellow-500"
         >
           <ChevronUpIcon className="h-8 text-white/90 font-bold" />
         </div>

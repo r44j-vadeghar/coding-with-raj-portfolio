@@ -6,13 +6,13 @@ function SocialItems() {
           <img
             loading="lazy"
             className="headerImage"
-            src="/linkedin-round.svg"
+            src="/img/linkedin-round.svg"
           />
         </a>
       </div>
       <div className="rounded-full hover:scale-125 transition-all cursor-pointer">
         <a href="https://github.com/RajVadeghar" target="_blank">
-          <img loading="lazy" className="headerImage" src="/github.svg" />
+          <img loading="lazy" className="headerImage" src="/img/github.svg" />
         </a>
       </div>
       <div className="rounded-full hover:scale-125 transition-all cursor-pointer">
@@ -20,7 +20,7 @@ function SocialItems() {
           <img
             loading="lazy"
             className="headerImage"
-            src="/instagram-round.svg"
+            src="/img/instagram-round.svg"
           />
         </a>
       </div>
@@ -29,7 +29,7 @@ function SocialItems() {
           <img
             loading="lazy"
             className="headerImage"
-            src="/twitter-round.svg"
+            src="/img/twitter-round.svg"
           />
         </a>
       </div>
@@ -38,7 +38,7 @@ function SocialItems() {
           <img
             loading="lazy"
             className="headerImage"
-            src="/facebook-round.svg"
+            src="/img/facebook-round.svg"
           />
         </a>
       </div>

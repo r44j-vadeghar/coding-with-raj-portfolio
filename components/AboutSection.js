@@ -2,11 +2,13 @@ import { DownloadIcon } from "@heroicons/react/outline";
 import { LightningBoltIcon } from "@heroicons/react/solid";
 
 const SKILLS = [
-  { techImgSrc: "/react-logo.png" },
-  { techImgSrc: "/next-logo.png" },
-  { techImgSrc: "/firebase-logo.png" },
-  { techImgSrc: "/tailwind-logo.svg" },
-  { techImgSrc: "/materialui-logo.png" },
+  { techImgSrc: "/img/react-logo.png" },
+  { techImgSrc: "/img/next-logo.png" },
+  { techImgSrc: "/img/firebase-logo.png" },
+  { techImgSrc: "/img/tailwind-logo.svg" },
+  { techImgSrc: "/img/materialui-logo.png" },
+  { techImgSrc: "/img/mongo-logo.png" },
+  { techImgSrc: "/img/typescript-logo.png" },
 ];
 
 function AboutSection({ whatIDo }) {

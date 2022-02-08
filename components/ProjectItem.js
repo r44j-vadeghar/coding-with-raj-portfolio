@@ -22,8 +22,8 @@ function ProjectItem({
           <div className="flex flex-col items-start space-y-7">
             <h1 className="sectionHeading">{name}</h1>
             <ul className="">
-              {descriptionList.map((desc) => (
-                <div className="flex space-x-2">
+              {descriptionList.map((desc, i) => (
+                <div key={i} className="flex space-x-2">
                   <div className="h-5 w-5">
                     <ChevronRightIcon className="h-5" />
                   </div>
@@ -32,8 +32,11 @@ function ProjectItem({
               ))}
             </ul>
             <div className="flex justify-start items-start space-x-3">
-              {technologiesUsed.map((tech) => (
-                <div className="w-10 h-10 md:w-20 md:h-20 bg-white/40 backdrop-blur-md rounded-full p-2 flex justify-center items-center">
+              {technologiesUsed.map((tech, i) => (
+                <div
+                  key={i}
+                  className="w-10 h-10 md:w-20 md:h-20 bg-white/40 backdrop-blur-md rounded-full p-2 flex justify-center items-center"
+                >
                   <img
                     className="animate-spin-slow"
                     src={tech.techImgSrc}
@@ -52,12 +55,12 @@ function ProjectItem({
             >
               Live Demo
             </a>
-            {/* <p
+            <p
               onClick={() => router.push(`/${id}`)}
               className="text-xs text-gray-200 italic z-40 cursor-pointer hover:underline hover:text-cyan-500"
             >
               more details &rarr;
-            </p> */}
+            </p>
           </div>
         </div>
       </div>

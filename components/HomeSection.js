@@ -15,12 +15,12 @@ function HomeSection() {
 
   return (
     <div id="home" className="flex sectionSize">
-      <div className="lg:w-3/5 flex flex-col space-y-12 md:space-y-20 justify-center h-screen animate-fade-up z-10 mx-5 md:mx-0">
+      <div className="lg:w-3/5 flex flex-col space-y-12 md:space-y-20 justify-center h-screen animate-slide-up z-10 mx-5 md:mx-0">
         <div className="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-11 sm:items-center">
-          <p className="text-coolGray-900 lg:text-cyan-600 transition-transform lg:hover:scale-125">
+          <p className="text-gray-200-900 lg:text-cyan-600 transition-transform lg:hover:scale-125">
             Raj Vadeghar
           </p>
-          <p className="text-coolGray-900 lg:text-cyan-600 transition-transform lg:hover:scale-125">
+          <p className="text-gray-900 lg:text-cyan-600 transition-transform lg:hover:scale-125">
             Available for Freelance project / full time job
           </p>
         </div>

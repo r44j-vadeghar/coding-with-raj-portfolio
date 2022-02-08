@@ -39,7 +39,7 @@
   }
 
   .sectionHeading {
-    @apply text-2xl sm:text-6xl font-semibold break-words;
+    @apply text-2xl sm:text-6xl font-semibold break-words capitalize;
   }
 
   .clipScreen-lg {
@@ -69,7 +69,7 @@
     @apply absolute inset-0 bg-right bg-no-repeat bg-contain clipProject-sm lg:clipProject-lg;
   }
   .clipScreenImageGradient {
-    @apply absolute inset-0 bg-gradient-to-tr from-blueGray-900 to-blueGray-900/10 clipProject-sm lg:clipProject-lg z-40;
+    @apply absolute inset-0 bg-gradient-to-tr from-slate-900 to-slate-900/10 clipProject-sm lg:clipProject-lg z-40;
   }
 
   .headerImage {
