@@ -1,3 +1,4 @@
+import { ChevronRightIcon } from "@heroicons/react/solid";
 import { Carousel } from "react-responsive-carousel";
 import ProjectItem from "./ProjectItem";
 import ProjectItemSmallScreen from "./ProjectItemSmallScreen";
@@ -17,13 +18,16 @@ function ProjectsSection({ projects }) {
         >
           {projects.map((project) => (
             <div key={project.id} className="w-screen">
+              <div
+                style={{ backgroundImage: `url('${project.bgImg}')` }}
+                className={`flex h-full w-full clipScreenImage opacity-40 lg:opacity-90 overflow-hidden z-10`}
+              />
               <ProjectItem
                 id={project.id}
                 name={project.projectName}
                 descriptionList={project.descriptionList}
                 technologiesUsed={project.technologiesUsed}
                 demoLink={project.demoLink}
-                bgImg={project.bgImg}
               />
             </div>
           ))}

@@ -27,7 +27,7 @@ export const projects = [
       { techImgSrc: "/img/typescript-logo.png" },
     ],
     demoLink: "https://kakatiyauniversity.vercel.app/",
-    bgImg: "bg-ku-app",
+    bgImg: "/ku.jpg",
     projectPagesDetails: [
       {
         id: "0",
@@ -253,7 +253,7 @@ export const projects = [
       { techImgSrc: "/img/tailwind-logo.svg" },
     ],
     demoLink: "https://coding-with-raj-google.vercel.app/",
-    bgImg: "bg-google-app",
+    bgImg: "/google-app.jpg",
     projectPagesDetails: [
       {
         id: "0",
@@ -353,7 +353,7 @@ export const projects = [
     ],
     demoLink:
       "https://codingwithraj-todo-app-nzm33nrtb-rajvadeghar.vercel.app/",
-    bgImg: "bg-todo-app",
+    bgImg: "/todo-app.jpg",
     projectPagesDetails: [
       {
         id: "0",
@@ -457,7 +457,7 @@ export const projects = [
       { techImgSrc: "/img/insta-logo.png" },
     ],
     demoLink: "https://instagram-redesign-4778b.web.app/",
-    bgImg: "bg-instagram-app",
+    bgImg: "/instagram-app.jpg",
     projectPagesDetails: [
       {
         id: "0",
@@ -567,7 +567,7 @@ export const projects = [
       { techImgSrc: "/img/materialui-logo.png" },
     ],
     demoLink: "https://codingwithraj-covid-tracker.web.app/",
-    bgImg: "bg-covid-app",
+    bgImg: "/covid-app.jpg",
     projectPagesDetails: [
       {
         id: "0",
@@ -643,7 +643,7 @@ export const projects = [
       { techImgSrc: "/img/netflix-logo.png" },
     ],
     demoLink: "https://codingwithraj-netflix-clone.web.app/",
-    bgImg: "bg-netflix-app",
+    bgImg: "/netflix-app.jpg",
     projectPagesDetails: [
       {
         id: "0",
@@ -726,7 +726,7 @@ export const projects = [
     ],
     demoLink:
       "https://codingwithraj-chat-app-3f0fpr9r1-rajvadeghar.vercel.app/",
-    bgImg: "bg-chat-app",
+    bgImg: "/chat-app-2.jpg",
     projectPagesDetails: [
       {
         id: "0",

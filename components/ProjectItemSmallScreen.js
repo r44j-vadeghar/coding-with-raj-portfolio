@@ -11,8 +11,9 @@ function ProjectItemSmallScreen({
 
   return (
     <div
-      id={id}
-      className={`relative ${bgImg} w-auto mx-5 overflow-hidden h-56 bg-contain rounded-md group`}
+      key={id}
+      style={{ backgroundImage: `url('${bgImg}')` }}
+      className={`relative w-auto mx-5 overflow-hidden h-56 bg-contain rounded-md group`}
     >
       <div className="absolute inset-0 bg-black/50 shadow-md" />
       <p

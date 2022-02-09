@@ -7,16 +7,16 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        "ku-app": "url('/img/ku.jpg')",
-        "chat-app": "url('/img/chat-app-2.jpg')",
-        "google-app": "url('/img/google-app.jpg')",
-        "todo-app": "url('/img/todo-app.jpg')",
-        "covid-app": "url('/img/covid-app.jpg')",
-        "netflix-app": "url('/img/netflix-app.jpg')",
-        "instagram-app": "url('/img/instagram-app.jpg')",
-        "me-img": "url('/img/me.JPG')",
-        "education-img": "url('/img/education.jpg')",
-        "contact-img": "url('/img/contact.jpg')",
+        "ku-app": "url('/ku.jpg')",
+        "chat-app": "url('/chat-app-2.jpg')",
+        "google-app": "url('/google-app.jpg')",
+        "todo-app": "url('/todo-app.jpg')",
+        "covid-app": "url('/covid-app.jpg')",
+        "netflix-app": "url('/netflix-app.jpg')",
+        "instagram-app": "url('/instagram-app.jpg')",
+        "me-img": "url('/me.JPG')",
+        "education-img": "url('/education.jpg')",
+        "contact-img": "url('/contact.jpg')",
       }),
       animation: {
         "slide-up": "slide 600ms ease-out 1",
