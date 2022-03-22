@@ -10,7 +10,7 @@ import { colleges, projects, whatIDo } from "../utils/data";
 
 export default function Home({ projects, colleges, whatIDo }) {
   return (
-    <div className="bg-gradient-to-r from-slate-800 to-gray-900 text-white h-auto max-w-screen">
+    <div className="bg-gradient-to-r from-slate-800 to-slate-900 text-white h-auto max-w-screen">
       <div className="clipScreenTW overflow-hidden"></div>
       <Head>
         <title>CodingWithRaj | Portfolio</title>

@@ -28,7 +28,7 @@ function Header() {
       <div
         className={`${
           !navVisible && "relative"
-        } h-12 flex sm:items-center sm:justify-between sectionSize`}
+        } h-16 flex sm:items-center sm:justify-between sectionSize`}
       >
         <div className="flex items-center justify-between mx-5 sm:mx-0 w-full">
           <SocialItems />
