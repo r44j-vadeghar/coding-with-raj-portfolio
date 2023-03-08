@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@fontsource/poppins";
+
+@layer components {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Poppins";
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scroll {
+    @apply:: -webkit-scrollbar: : -webkit-scrollbar-track: : -webkit-scrollbar-thumb:
+      : -webkit-scrollbar-thumb: window-inactive;
+  }
+
+  .sectionHeading {
+    @apply break-words text-2xl font-semibold capitalize sm:text-6xl;
+  }
+
+  .clipScreen-lg {
+    clip-path: polygon(68% 0, 100% 0%, 100% 100%, 55% 100%);
+  }
+  .clipScreen-sm {
+    clip-path: circle(60% at 50% 0%);
+  }
+  .clipProject-lg {
+    /* clip-path: polygon(55% 0, 100% 0%, 100% 100%, 55% 50%); */
+    clip-path: ellipse(45% 100% at 100% 0%);
+  }
+  .clipProject {
+    /* clip-path: polygon(55% 0, 100% 0%, 100% 100%, 55% 50%); */
+    clip-path: ellipse(80% 80% at 0% 100%);
+  }
+  .clipProject-sm {
+    /* clip-path: polygon(55% 0, 100% 0%, 100% 100%, 55% 50%); */
+    clip-path: circle(100% at 50% 0%);
+  }
+
+  .clipScreenTW {
+    @apply clipScreen-sm lg:clipScreen-lg absolute inset-0 bg-indigo-600;
+  }
+
+  .clipScreenImage {
+    @apply clipProject-sm lg:clipProject-lg absolute inset-0 bg-contain bg-right bg-no-repeat;
+  }
+  .clipScreenImageGradient {
+    @apply clipProject-sm lg:clipProject-lg absolute inset-0 z-40 bg-gradient-to-tr from-slate-900 to-slate-900/10;
+  }
+
+  .headerImage {
+    @apply w-6 rounded-full bg-white/80 object-contain ring-2 ring-white/80 hover:bg-cyan-500;
+  }
+
+  .headerItem {
+    @apply cursor-pointer text-sm font-semibold capitalize tracking-widest transition-all hover:text-cyan-500;
+  }
+
+  .sectionSize {
+    @apply mx-auto max-w-screen-xl 3xl:max-w-screen-2xl;
+  }
+
+  .blueButton {
+    @apply relative flex w-max cursor-pointer items-center space-x-1 rounded-md bg-blue-600 px-6 py-3 text-white transition-all hover:bg-blue-500;
+  }
+}
